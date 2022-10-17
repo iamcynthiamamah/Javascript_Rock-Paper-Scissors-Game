@@ -1,0 +1,141 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".*/
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    /*setting the box-sizing to border box will ensure the box doesn't expand it's height or width on addition of padding or margin, it will still maintain the width and height set for the element*/
+    box-sizing: border-box;
+
+}
+
+h2{
+    font-size: 3rem;
+    color: rgb(131, 127, 127);
+    margin-bottom: 2rem;
+}
+body{
+    background: rgb(0, 0, 0);
+    color:white;
+    text-align: center;
+}
+
+.container{
+    width: 76%;
+    margin: 0px auto;
+}
+
+.resultsContainer{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.fist{
+    border: 2px solid white;
+    background:white;
+    border-radius: 36px;
+    height: 150px;
+    padding-bottom: 0.8rem;
+    width: 150px;
+    margin: 0.8rem;
+    font-size: 5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    
+}
+
+.endGameButton{
+    border: 2px solid white;
+    background:white;
+    border-radius: 36px;
+    height: 130px;
+    width: 130px;
+    margin: 0.8rem;
+    cursor: pointer;
+    
+}
+
+
+.resultContainer{
+    display: none;
+}
+.endGameButton img{
+    width: 60px;
+    height: 80px;
+    
+    
+}
+
+
+.wrapper{
+    width: 76%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/*MEDIA QUERIES FOR SMALL SCREEN*/
+@media screen and (max-width: 600px) {
+
+    .container{
+        width: 98%;
+        margin: 0px auto;
+    }
+    h2{
+        font-size: 3rem;
+        color: rgb(131, 127, 127);
+        margin-bottom: 4rem;
+    }
+    
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #hands{
+        display: block;
+        font-size: 1.85rem;
+    }
+
+    .resultsContainer{
+        font-size: 2.7rem !important;
+        text-align: center;
+    }
+
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .container{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .resultsContainer{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
